@@ -4,7 +4,7 @@ import Buttons from './Buttons'
 const NavBar = () => {
     return (
         <header id="header">
-            <Link to="home">
+            <Link to="/">
                 <img src="./logo.bt2.png" alt="" />
             </Link>
             <Buttons type="NavBar" />

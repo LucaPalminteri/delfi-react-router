@@ -40,6 +40,7 @@
 /*Item List*/
 .item_list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -87,6 +88,10 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .container{

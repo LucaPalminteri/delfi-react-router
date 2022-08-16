@@ -2,28 +2,26 @@ import { useEffect, useState } from "react";
 import { productos } from "../productos/productos";
 import { customFetch } from "../CustomFetch";
 import { useParams } from "react-router-dom"
+import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
 
-    const [Product, SetProduct] = useState({})
     const [Loading, SetLoading] = useState(false)
     const {id} = useParams()
 
     useEffect(() => {
         customFetch(productos)
         .then(data => {
-            console.log(id);
             SetLoading(true)
-            SetProduct(data.find(item => item.id==id))
         })
       }, [id]) 
 
         return (
             <>
             {
-                Loading?
+                Loading ?
 
-                <itemDetail Product={Product} />
+                <ItemDetail product={productos[id-1]} />
                 :
                 <div>
                     

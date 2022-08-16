@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <main>
         <Routes> 
-            <Route path="/home" element={<ItemListContainer/>}/>
+            <Route exact path="/" element={<ItemListContainer/>}/>
             <Route path="/categoria/:id" element={<ItemListContainer/>} />
             <Route path="/detalle/:id" element={<ItemDetailContainer/>} />
             <Route path="/cart" element={<Cart/>} />

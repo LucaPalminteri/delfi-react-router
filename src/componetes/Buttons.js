@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Botones = (props) => {
 
-  if (props.type == "NavBar") {
+  if (props.type === "NavBar") {
     return (
       <nav>
         <Link to="/categoria/bikinis">Bikinis</Link>
